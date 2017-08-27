@@ -3,7 +3,7 @@ public class calculator {
     public static void main(String args[]){
         Scanner scannervariable = new Scanner(System.in);
         System.out.println("Please choose the calculation you want to do:");
-        System.out.println("1. Add\n2. Minus\n3. Divide\n4. Multiply\n5. Mod");
+        System.out.println("1. Add\n2. Minus\n3. Divide\n4. Multiply\n5. Mod\n6. Quadratic Formula");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -50,6 +50,40 @@ public class calculator {
             double enps_answer2 = scannervariable.nextDouble();
             double enps_total22 = enps_answer1 % enps_answer2;
             System.out.println("Your total is "+enps_total22);
+        }
+        if(userchoice.equals("6")){
+            //this section of code will work to give you a negative and positive x using the quadratic formula
+            System.out.println("Please enter your A");
+            double enps_Axquad = scannervariable.nextDouble();
+            System.out.println("Please enter your B");
+            double enps_Bxquad = scannervariable.nextDouble();
+            System.out.println("Please enter your C");
+            double enps_Cxquad =scannervariable.nextDouble();
+            //-b+-/b^2-4(a*c)
+            //---------------
+            //     2a
+            double enps_AxC;
+            double enps_4xAC;
+            double enps_BxB;
+            double enps_BB_4xAC;
+            double enps_SqrtB_4xAC;
+            double enps_top;
+            double enps_total;
+            double enps_top2;
+            double enps_total2;
+
+            enps_AxC = enps_Axquad*enps_Cxquad;
+            enps_4xAC = 4*enps_AxC;
+            enps_BxB = enps_Bxquad*enps_Bxquad;
+            enps_BB_4xAC = enps_BxB - enps_4xAC;
+            enps_SqrtB_4xAC = Math.sqrt(enps_BB_4xAC);
+            enps_top = -enps_Bxquad+enps_SqrtB_4xAC;
+            enps_top2 = -enps_Bxquad-enps_SqrtB_4xAC;
+            enps_total = enps_top/2*enps_Axquad;
+            enps_total2 = enps_top2/2*enps_Axquad;
+
+            System.out.println("Your positive x is "+enps_total);
+            System.out.println("Your negative x is "+enps_total2);
         }
         if ((userchoice!="1")&&(userchoice!="2")&&(userchoice!="3")&&(userchoice!="4")){
             System.out.println("Please enter a valid input");
