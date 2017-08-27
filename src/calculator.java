@@ -87,6 +87,7 @@ public class calculator {
             System.out.println("Your negative x is "+enps_total2);
         }
         if(userchoice.equals("7")){
+            //thi subroutine will assist you in working out the momentum of any object given its mass and velocity.
             System.out.println("Please enter your mass");
             double enps_mass = scannervariable.nextDouble();
             System.out.println("Please enter your velocity");
