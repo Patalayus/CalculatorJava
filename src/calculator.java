@@ -98,10 +98,12 @@ public class calculator {
         if(userchoice.equals("8"))
         {
             //this subroutine will allow for a user to be able to work out the speed of an object
-            System.out.println("Please enter your distance");
+            System.out.println("Please enter your distance in meters");
             double enps_distance = scannervariable.nextDouble();
-            System.out.println("Please enter your time");
+            System.out.println("Please enter your time in seconds");
             double enps_time = scannervariable.nextDouble();
+            double enps_totalspeed = enps_distance / enps_time;
+            System.out.println("You total speed is "+enps_totalspeed+"m/s");
 
         }
         if ((userchoice!="1")&&(userchoice!="2")&&(userchoice!="3")&&(userchoice!="4")){
