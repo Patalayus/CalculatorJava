@@ -1,10 +1,12 @@
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
 public class calculator {
-    public static void main(String args[]){
+    public static void main(String args[]) throws InterruptedException {
         Scanner scannervariable = new Scanner(System.in);
         System.out.println("Please choose the calculation you want to do:");
         System.out.println("1. Add\n2. Minus\n3. Divide\n4. Multiply\n5. Mod\n6. Quadratic Formula" +
-                "\n7. Momentum of an object\n8. Speed of an object\n9. ");
+                "\n7. Momentum of an object\n8. Speed of an object\n9. Print prime numbers");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -105,11 +107,25 @@ public class calculator {
             double enps_totalspeed = enps_distance / enps_time;
             System.out.println("You total speed is "+enps_totalspeed+"m/s");
         }
-        if(userchoice.equals("9"))
+        if(userchoice.equals("9")){
+            System.out.println("Printing prime numbers...");
+            //TimeUnit.SECONDS.sleep(1);
+            int counter = 0;
+            while(true) {
+                counter++;
+                if((counter%counter==0)&&(counter/1==0)
+                        &&(counter/2!=0)&&(counter/3!=0)
+                        &&(counter/4!=0)&&(counter/5!=0)
+                        &&(counter/6!=0)&&(counter/7!=0)
+                        &&(counter/8!=0)&&(counter/9!=0)){
+                    System.out.println(counter);
+                }else{
+                    System.out.println("Not Prime");
+                }
+            }
+        }
         if ((userchoice!="1")&&(userchoice!="2")&&(userchoice!="3")&&(userchoice!="4")){
             System.out.println("Please enter a valid input");
         }
     }
-    //by Laminar Softworks
-    //Please leave feedback
 }
