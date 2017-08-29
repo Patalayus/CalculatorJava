@@ -109,22 +109,15 @@ public class calculator {
         }
         if(userchoice.equals("9")){
             System.out.println("Printing prime numbers...");
-            //TimeUnit.SECONDS.sleep(1);
-            int counter = 0;
-            while(true) {
-                counter++;
-                if((counter%counter==0)&&(counter/1==0)
-                        &&(counter/2!=0)&&(counter/3!=0)
-                        &&(counter/4!=0)&&(counter/5!=0)
-                        &&(counter/6!=0)&&(counter/7!=0)
-                        &&(counter/8!=0)&&(counter/9!=0)){
-                    System.out.println(counter);
-                }else{
-                    System.out.println("Not Prime");
+            int count = 2;
+            for(int i=2;i<1000;i++){
+                count++;
+                if(count%2!=0&&count%3!=0&&count%4!=0&&count%5!=0&&count%6!=0&&count%7!=0&&count%8!=0&&count%9!=0){
+                    System.out.println(count+ " is a prime number");
                 }
             }
         }
-        if ((userchoice!="1")&&(userchoice!="2")&&(userchoice!="3")&&(userchoice!="4")){
+        if (userchoice.equals(10)){
             System.out.println("Please enter a valid input");
         }
     }
