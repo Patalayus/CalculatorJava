@@ -108,11 +108,13 @@ public class calculator {
             System.out.println("You total speed is "+enps_totalspeed+"m/s");
         }
         if(userchoice.equals("9")){
+            //this subroutine prints prime numbers from 1 to 1000
             System.out.println("Printing prime numbers...");
             int count = 2;
             for(int i=2;i<1000;i++){
                 count++;
-                if(count%2!=0&&count%3!=0&&count%4!=0&&count%5!=0&&count%6!=0&&count%7!=0&&count%8!=0&&count%9!=0){
+                if(count%2!=0&&count%3!=0&&count%4!=0&&count%5!=0
+                        &&count%6!=0&&count%7!=0&&count%8!=0&&count%9!=0){
                     System.out.println(count+ " is a prime number");
                 }
             }
