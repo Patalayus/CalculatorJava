@@ -4,7 +4,7 @@ public class calculator {
         Scanner scannervariable = new Scanner(System.in);
         System.out.println("Please choose the calculation you want to do:");
         System.out.println("1. Add\n2. Minus\n3. Divide\n4. Multiply\n5. Mod\n6. Quadratic Formula" +
-                "\n7. Momentum of an object");
+                "\n7. Momentum of an object\n8. Speed of an object");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -87,13 +87,22 @@ public class calculator {
             System.out.println("Your negative x is "+enps_total2);
         }
         if(userchoice.equals("7")){
-            //thi subroutine will assist you in working out the momentum of any object given its mass and velocity.
+            //this subroutine will assist you in working out the momentum of any object given its mass and velocity.
             System.out.println("Please enter your mass");
             double enps_mass = scannervariable.nextDouble();
             System.out.println("Please enter your velocity");
             double enps_velocity = scannervariable.nextDouble();
             double enps_momentum = enps_mass*enps_velocity;
             System.out.println("Your total is "+enps_momentum);
+        }
+        if(userchoice.equals("8"))
+        {
+            //this subroutine will allow for a user to be able to work out the speed of an object
+            System.out.println("Please enter your distance");
+            double enps_distance = scannervariable.nextDouble();
+            System.out.println("Please enter your time");
+            double enps_time = scannervariable.nextDouble();
+
         }
         if ((userchoice!="1")&&(userchoice!="2")&&(userchoice!="3")&&(userchoice!="4")){
             System.out.println("Please enter a valid input");
