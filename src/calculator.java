@@ -6,7 +6,8 @@ public class calculator {
         Scanner scannervariable = new Scanner(System.in);
         System.out.println("Please choose the calculation you want to do:");
         System.out.println("1. Add\n2. Minus\n3. Divide\n4. Multiply\n5. Mod\n6. Quadratic Formula" +
-                "\n7. Momentum of an object\n8. Speed of an object\n9. Print prime numbers\n 10. Young's Modulus");
+                "\n7. Momentum of an object\n8. Speed of an object\n9. Print prime numbers\n 10. Young's Modulus" +
+                "\n11. Work out voltage of a circuit");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -132,6 +133,14 @@ public class calculator {
             double enps_originallength = scannervariable.nextDouble();
             double youngs = (enps_forceforyoungs/enps_areaforyoungs)/(enps_changeinlengthforyoungs/enps_originallength);
             System.out.println("Your Young's Modulus is "+youngs);
+        }
+        if(userchoice.equals("11")){
+            System.out.println("Please enter your current in amps");
+            double enps_currentvariable = scannervariable.nextDouble();
+            System.out.println("Please enter your resistance in ohms");
+            double enps_resistancevariable = scannervariable.nextDouble();
+            double enps_voltage = enps_currentvariable * enps_resistancevariable;
+            System.out.println("You voltage is "+enps_voltage+"v");
         }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
