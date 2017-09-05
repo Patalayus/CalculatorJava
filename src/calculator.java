@@ -148,8 +148,15 @@ public class calculator {
                     System.out.println(content);
                 }
             }
-
-        }        if (!userchoice.equals("1")&!userchoice.equals("2")&
+        }
+        if(userchoice.equals("13")){
+            for(int odd = 0;odd<100;odd++){
+                if(odd%2!=0){
+                    System.out.println(odd);
+                }
+            }
+        }
+        if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
                 !userchoice.equals("5")&!userchoice.equals("6")&
                 !userchoice.equals("7")&!userchoice.equals("8")&
