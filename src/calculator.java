@@ -7,7 +7,7 @@ public class calculator {
         System.out.println("Please choose the calculation you want to do:");
         System.out.println("1. Add\n2. Minus\n3. Divide\n4. Multiply\n5. Mod\n6. Quadratic Formula" +
                 "\n7. Momentum of an object\n8. Speed of an object\n9. Print prime numbers\n 10. Young's Modulus" +
-                "\n11. Work out voltage of a circuit");
+                "\n11. Work out voltage of a circuit\n12. Print event numbers to 100\n13. Print odd numbers to 100");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -142,7 +142,14 @@ public class calculator {
             double enps_voltage = enps_currentvariable * enps_resistancevariable;
             System.out.println("You voltage is "+enps_voltage+"v");
         }
-        if (!userchoice.equals("1")&!userchoice.equals("2")&
+        if(userchoice.equals("12")){
+            for(int content=0;content<100;content++){
+                if(content%2==0){
+                    System.out.println(content);
+                }
+            }
+
+        }        if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
                 !userchoice.equals("5")&!userchoice.equals("6")&
                 !userchoice.equals("7")&!userchoice.equals("8")&
