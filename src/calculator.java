@@ -171,7 +171,7 @@ public class calculator {
                 !userchoice.equals("7")&!userchoice.equals("8")&
                 !userchoice.equals("9")&!userchoice.equals("10")
                 &!userchoice.equals("11")&!userchoice.equals("12")
-                &!userchoice.equals("13")){
+                &!userchoice.equals("13")&!userchoice.equals("14")){
             System.out.println("Please enter a valid input");
         }
     }
