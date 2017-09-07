@@ -160,7 +160,9 @@ public class calculator {
                 !userchoice.equals("3")&!userchoice.equals("4")&
                 !userchoice.equals("5")&!userchoice.equals("6")&
                 !userchoice.equals("7")&!userchoice.equals("8")&
-                !userchoice.equals("9")){
+                !userchoice.equals("9")&!userchoice.equals("10")
+                &!userchoice.equals("11")&!userchoice.equals("12")
+                &!userchoice.equals("13")){
             System.out.println("Please enter a valid input");
         }
     }
