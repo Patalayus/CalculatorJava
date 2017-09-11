@@ -8,7 +8,8 @@ public class calculator {
         System.out.println("1. Add\n2. Minus\n3. Divide\n4. Multiply\n5. Mod\n6. Quadratic Formula" +
                 "\n7. Momentum of an object\n8. Speed of an object\n9. Print prime numbers\n 10. Young's Modulus" +
                 "\n11. Work out voltage of a circuit\n12. Print event numbers to 100\n13. Print odd numbers to 100" +
-                "\n14. Work out the kinetic energy of an object\n15. work out the period of an object");
+                "\n14. Work out the kinetic energy of an object\n15. work out the period of an object" +
+                "\n16. ");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -101,13 +102,18 @@ public class calculator {
         }
         if(userchoice.equals("8"))
         {
-            //this subroutine will allow for a user to be able to work out the speed of an object
-            System.out.println("Please enter your distance in meters");
-            double enps_distance = scannervariable.nextDouble();
-            System.out.println("Please enter your time in seconds");
-            double enps_time = scannervariable.nextDouble();
-            double enps_totalspeed = enps_distance / enps_time;
-            System.out.println("You total speed is "+enps_totalspeed+"m/s");
+            System.out.println("Please specify which equation you want to use:\n1.S=D/T\n2.T=D/S\n3.D=SxT");
+            double responce = scannervariable.nextDouble();
+            if(responce == 1){
+                //S=D/T
+                System.out.println("you entered 1");
+            }else if(responce ==2){
+                //T=D/S
+                System.out.println("You entered 2");
+            }else if(responce ==3){
+                //D=SxT
+                System.out.println("You entered 3");
+            }
         }
         if(userchoice.equals("9")){
             //this subroutine prints prime numbers from 1 to 1000
