@@ -6,10 +6,10 @@ public class calculator {
         Scanner scannervariable = new Scanner(System.in);
         System.out.println("Please choose the calculation you want to do:");
         System.out.println("1. Add\n2. Minus\n3. Divide\n4. Multiply\n5. Mod\n6. Quadratic Formula" +
-                "\n7. Momentum of an object\n8. Speed of an object\n9. Print prime numbers\n 10. Young's Modulus" +
+                "\n7. Momentum of an object\n8. Speed, distance or time of an object\n9. Print prime numbers\n 10. Young's Modulus" +
                 "\n11. Work out voltage of a circuit\n12. Print event numbers to 100\n13. Print odd numbers to 100" +
-                "\n14. Work out the kinetic energy of an object\n15. work out the period of an object" +
-                "\n16. ");
+                "\n14. Work out the kinetic energy of an object\n15. work out the period of an object"
+                );
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -106,13 +106,30 @@ public class calculator {
             double responce = scannervariable.nextDouble();
             if(responce == 1){
                 //S=D/T
-                System.out.println("you entered 1");
+                System.out.println("Please enter your distance");
+                double distance0 = scannervariable.nextDouble();
+                System.out.println("Please enter you time");
+                double time0 = scannervariable.nextDouble();
+                double total0 = distance0 / time0;
+                System.out.println("Your total is"+total0);
             }else if(responce ==2){
                 //T=D/S
-                System.out.println("You entered 2");
+                System.out.println("Please enter your distance");
+                double distance1 = scannervariable.nextDouble();
+                System.out.println("Please enter your speed");
+                double speed1 = scannervariable.nextDouble();
+                double total1 = distance1 / speed1;
+                System.out.println("Your total is"+total1);
             }else if(responce ==3){
                 //D=SxT
-                System.out.println("You entered 3");
+                System.out.println("Please enter your speed");
+                double speed0 = scannervariable.nextDouble();
+                System.out.println("Please enter your time");
+                double time1 = scannervariable.nextDouble();
+                double total2 = speed0 / time1;
+                System.out.println("Your total is"+total2);
+            }else{
+                System.out.println("Please enter a valid input");
             }
         }
         if(userchoice.equals("9")){
