@@ -9,7 +9,7 @@ public class calculator {
                 "\n7. Momentum of an object\n8. Speed, distance or time of an object\n9. Print prime numbers\n 10. Young's Modulus" +
                 "\n11. Work out voltage of a circuit\n12. Print event numbers to 100\n13. Print odd numbers to 100" +
                 "\n14. Work out the kinetic energy of an object\n15. work out the period of an object" +
-                "\n16. Work out density");
+                "\n16. Work out density\n17. work out the refractive index of an object");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -202,6 +202,13 @@ public class calculator {
             double enps_volume11 = scannervariable.nextDouble();
             double enps_density = enps_mass11 / enps_volume11;
             System.out.println("Your total is"+enps_density);
+        }
+        if(userchoice.equals("17")){
+            System.out.println("Please enter your angle of incidence");
+            double enps_AOI = scannervariable.nextDouble();
+            System.out.println("Please enter your angle of refraction");
+            double enps_AOR = scannervariable.nextDouble();
+
         }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
