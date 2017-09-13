@@ -198,6 +198,10 @@ public class calculator {
         if(userchoice.equals("16")){
             System.out.println("Please enter your mass");
             double enps_mass11 = scannervariable.nextDouble();
+            System.out.println("Please enter volume");
+            double enps_volume11 = scannervariable.nextDouble();
+            double enps_density = enps_mass11 / enps_volume11;
+            System.out.println("Your total is"+enps_density);
         }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
