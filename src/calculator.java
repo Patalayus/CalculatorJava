@@ -201,14 +201,15 @@ public class calculator {
             System.out.println("Please enter volume");
             double enps_volume11 = scannervariable.nextDouble();
             double enps_density = enps_mass11 / enps_volume11;
-            System.out.println("Your total is"+enps_density);
+            System.out.println("Your total is "+enps_density);
         }
         if(userchoice.equals("17")){
             System.out.println("Please enter your angle of incidence");
             double enps_AOI = scannervariable.nextDouble();
             System.out.println("Please enter your angle of refraction");
             double enps_AOR = scannervariable.nextDouble();
-
+            double enps_totalRef = Math.sin(enps_AOI)/Math.sin(enps_AOR);
+            System.out.println("Your total is"+enps_totalRef);
         }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
