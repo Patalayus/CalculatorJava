@@ -215,6 +215,50 @@ public class calculator {
         if(userchoice.equals("18")){
             System.out.println("You have chosen to do a SUVAT equation\nPlease choose one:\n1. v=u+at\n2. s=ut+0.5*at^2\n3." +
                     " s=0.5(u+v)t\n4. v^2=u^2+2as\n5. s=vt-0.5at^2");
+            double responce = scannervariable.nextDouble();
+            if(responce == 1){
+                //v=u+at
+                System.out.println("Please enter your initial velocity");
+                double enps_U = scannervariable.nextDouble();
+                System.out.println("Please enter your area");
+                double enps_A = scannervariable.nextDouble();
+                System.out.println("Please enter your time");
+                double enps_T = scannervariable.nextDouble();
+                double enps_TotalSUVAT1 = enps_U*(enps_A*enps_T);
+                System.out.println("Your total is "+enps_TotalSUVAT1);
+            }else if(responce == 2){
+                //s=ut+0.5*at^2
+                System.out.println("Please enter your initial velocity");
+                double enps_U2 = scannervariable.nextDouble();
+                System.out.println("Please enter your time");
+                double enps_T2 = scannervariable.nextDouble();
+                System.out.println("Please enter your area");
+                double enps_A2 = scannervariable.nextDouble();
+            }else if(responce == 3){
+                //s=0.5(u+v)t
+                System.out.println("Please enter your initial velocity");
+                double enps_U3 = scannervariable.nextDouble();
+                System.out.println("Please enter your final velocity");
+                double ens_V2 = scannervariable.nextDouble();
+                System.out.println("Please enter your time");
+                double enps_T3 = scannervariable.nextDouble();
+            }else if(responce == 4){
+                //v^2=u^2+2as
+                System.out.println("Please enter your initial velocity");
+                double enps_U4 = scannervariable.nextDouble();
+                System.out.println("Please enter your area");
+                double enps_A3 = scannervariable.nextDouble();
+                System.out.println("Please enter your distance");
+                double enps_D = scannervariable.nextDouble();
+            }else if(responce == 5){
+                //s=vt-0.5at^2
+                System.out.println("Please enter your final velocity");
+                double enps_V = scannervariable.nextDouble();
+                System.out.println("Please enter your time");
+                double enps_T4 = scannervariable.nextDouble();
+                System.out.println("Please enter your initial velocity");
+                double enps_U5 = scannervariable.nextDouble();
+            }
         }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
