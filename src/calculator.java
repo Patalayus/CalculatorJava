@@ -6,10 +6,11 @@ public class calculator {
         Scanner scannervariable = new Scanner(System.in);
         System.out.println("Please choose the calculation you want to do:");
         System.out.println("1. Add\n2. Minus\n3. Divide\n4. Multiply\n5. Mod\n6. Quadratic Formula" +
-                "\n7. Momentum of an object\n8. Speed, distance or time of an object\n9. Print prime numbers\n 10. Young's Modulus" +
+                "\n7. Momentum of an object\n8. Speed, distance or time of an object\n9. Print prime numbers\n10. Young's Modulus" +
                 "\n11. Work out voltage of a circuit\n12. Print event numbers to 100\n13. Print odd numbers to 100" +
                 "\n14. Work out the kinetic energy of an object\n15. work out the period of an object" +
-                "\n16. Work out density\n17. work out the refractive index of an object");
+                "\n16. Work out density\n17. work out the refractive index of an object" +
+                "\n18. SUVAT");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -210,6 +211,10 @@ public class calculator {
             double enps_AOR = scannervariable.nextDouble();
             double enps_totalRef = Math.sin(enps_AOI)/Math.sin(enps_AOR);
             System.out.println("Your total is"+enps_totalRef);
+        }
+        if(userchoice.equals("18")){
+            System.out.println("You have chosen to do a SUVAT equation\nPlease choose one:\n1. v=u+at\n2. s=ut+0.5*at^2\n3." +
+                    " s=0.5(u+v)t\n4. v^2=u^2+2as\n5. s=vt-0.5at^2");
         }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
