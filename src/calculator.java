@@ -245,6 +245,8 @@ public class calculator {
                 double ens_V2 = scannervariable.nextDouble();
                 System.out.println("Please enter your time");
                 double enps_T3 = scannervariable.nextDouble();
+                double total_3 = 0.5*(enps_U3+ens_V2)*enps_T3;
+                System.out.println("Your total is "+total_3);
             }else if(responce == 4){
                 //v^2=u^2+2as
                 System.out.println("Please enter your initial velocity");
