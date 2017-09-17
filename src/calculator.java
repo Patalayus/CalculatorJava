@@ -234,6 +234,9 @@ public class calculator {
                 double enps_T2 = scannervariable.nextDouble();
                 System.out.println("Please enter your area");
                 double enps_A2 = scannervariable.nextDouble();
+                double enps_ATSquared = (enps_A2*enps_T2)*(enps_A2*enps_T2);
+                double total_SUVAT2 = enps_U2*enps_T2+0.5*enps_ATSquared;
+                System.out.println("Your total is "+total_SUVAT2);
             }else if(responce == 3){
                 //s=0.5(u+v)t
                 System.out.println("Please enter your initial velocity");
