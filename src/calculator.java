@@ -286,5 +286,6 @@ public class calculator {
                 &!userchoice.equals("15")&!userchoice.equals("16")){
             System.out.println("Please enter a valid input");
         }
+
     }
 }
