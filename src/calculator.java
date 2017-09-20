@@ -10,7 +10,7 @@ public class calculator {
                 "\n11. Work out voltage of a circuit\n12. Print even numbers to 100\n13. Print odd numbers to 100" +
                 "\n14. Work out the kinetic energy of an object\n15. work out the period of an object" +
                 "\n16. Work out density\n17. work out the refractive index of an object" +
-                "\n18. SUVAT\n 19. Calculate change in gravitational potential energy");
+                "\n18. SUVAT\n19. Calculate change in gravitational potential energy\n20. Work out the force on an object");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -276,6 +276,15 @@ public class calculator {
             double total_all = mass*field_strength*height;
             System.out.println("Your total is "+total_all);
         }
+        if(userchoice.equals("20")){
+            //F=m*a
+            System.out.println("You have chosen to work out the force on an object.\nPlease enter your mass. (kg)");
+            double enps_mass_ = scannervariable.nextDouble();
+            System.out.println("Please enter your acceleration (m/s^2)");
+            double enps_accceleration_ = scannervariable.nextDouble();
+            double enps_total_ = enps_mass_ * enps_accceleration_;
+            System.out.println("Your total is "+enps_total_+"N");
+        }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
                 !userchoice.equals("5")&!userchoice.equals("6")&
@@ -283,7 +292,9 @@ public class calculator {
                 !userchoice.equals("9")&!userchoice.equals("10")
                 &!userchoice.equals("11")&!userchoice.equals("12")
                 &!userchoice.equals("13")&!userchoice.equals("14")
-                &!userchoice.equals("15")&!userchoice.equals("16")){
+                &!userchoice.equals("15")&!userchoice.equals("16")
+                &!(userchoice.equals("17")&!(userchoice.equals("18")&!
+                (userchoice.equals("19"))))){
             System.out.println("Please enter a valid input");
         }
 
