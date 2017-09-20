@@ -7,10 +7,10 @@ public class calculator {
         System.out.println("Please choose the calculation you want to do:");
         System.out.println("1. Add\n2. Minus\n3. Divide\n4. Multiply\n5. Mod\n6. Quadratic Formula" +
                 "\n7. Momentum of an object\n8. Speed, distance or time of an object\n9. Print prime numbers\n10. Young's Modulus" +
-                "\n11. Work out voltage of a circuit\n12. Print event numbers to 100\n13. Print odd numbers to 100" +
+                "\n11. Work out voltage of a circuit\n12. Print even numbers to 100\n13. Print odd numbers to 100" +
                 "\n14. Work out the kinetic energy of an object\n15. work out the period of an object" +
                 "\n16. Work out density\n17. work out the refractive index of an object" +
-                "\n18. SUVAT");
+                "\n18. SUVAT\n 19. Calculate change in gravitational potential energy");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -264,6 +264,17 @@ public class calculator {
                 System.out.println("Please enter your initial velocity");
                 double enps_U5 = scannervariable.nextDouble();
             }
+        }if(userchoice.equals("19")){
+            //Ep=m*g*h
+            System.out.println("You have chosen to work out the change in gravitational energy of an object.");
+            System.out.println("Please enter your mass");
+            double mass = scannervariable.nextDouble();
+            System.out.println("Please enter your gravitational field strength");
+            double field_strength = scannervariable.nextDouble();
+            System.out.println("Please enter you height");
+            double height = scannervariable.nextDouble();
+            double total_all = mass*field_strength*height;
+            System.out.println("Your total is "+total_all);
         }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
@@ -271,7 +282,8 @@ public class calculator {
                 !userchoice.equals("7")&!userchoice.equals("8")&
                 !userchoice.equals("9")&!userchoice.equals("10")
                 &!userchoice.equals("11")&!userchoice.equals("12")
-                &!userchoice.equals("13")&!userchoice.equals("14")){
+                &!userchoice.equals("13")&!userchoice.equals("14")
+                &!userchoice.equals("15")&!userchoice.equals("16")){
             System.out.println("Please enter a valid input");
         }
     }
