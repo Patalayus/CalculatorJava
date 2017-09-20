@@ -279,6 +279,7 @@ public class calculator {
             double total_all = mass*field_strength*height;
             System.out.println("Your total is "+total_all);
         }
+
         if(userchoice.equals("20")){
             //F=m*a
             System.out.println("You have chosen to work out the force on an object.\nPlease enter your mass. (kg)");
