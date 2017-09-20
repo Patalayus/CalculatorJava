@@ -297,6 +297,5 @@ public class calculator {
                 (userchoice.equals("19"))))){
             System.out.println("Please enter a valid input");
         }
-
     }
 }
