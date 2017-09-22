@@ -299,9 +299,19 @@ public class calculator {
                 double total_0 = opposite / hypotenuse;
                 System.out.println("Your total is"+total_0+" degrees");
             }else if(valueanswer == 2){
-                System.out.println("Please enter your ");
+                System.out.println("Please enter your adjacent angle");
+                double adjacent = scannervariable.nextDouble();
+                System.out.println("Please enter your hypotenuse");
+                double hypotenuse1 = scannervariable.nextDouble();
+                double total_1 = adjacent / hypotenuse1;
+                System.out.println("Your total is "+total_1+" degrees");
             }else if(valueanswer == 3){
-
+                System.out.println("Please enter your opposite");
+                double opposite1 = scannervariable.nextDouble();
+                System.out.println("Please enter your adjacent");
+                double adjacent1 = scannervariable.nextDouble();
+                double total_2 = opposite1 / adjacent1;
+                System.out.println("Your total is"+total_2+" degrees");
             }
         }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
