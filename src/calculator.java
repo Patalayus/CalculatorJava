@@ -10,7 +10,8 @@ public class calculator {
                 "\n11. Work out voltage of a circuit\n12. Print even numbers to 100\n13. Print odd numbers to 100" +
                 "\n14. Work out the kinetic energy of an object\n15. work out the period of an object" +
                 "\n16. Work out density\n17. work out the refractive index of an object" +
-                "\n18. SUVAT\n19. Calculate change in gravitational potential energy\n20. Work out the force on an object");
+                "\n18. SUVAT\n19. Calculate change in gravitational potential energy\n20. Work out the force on an object\n" +
+                "21. SOH CAH TOA");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -285,6 +286,23 @@ public class calculator {
             double enps_accceleration_ = scannervariable.nextDouble();
             double enps_total_ = enps_mass_ * enps_accceleration_;
             System.out.println("Your total is "+enps_total_+"N");
+        }
+        if(userchoice.equals("21")){
+            System.out.println("You have chosen to work out sine theta, tan theta or cos theta");
+            System.out.println("Please enter which option you would want to work out:\n1. Sin\n2. Cos\n3. Tan");
+            double valueanswer = scannervariable.nextDouble();
+            if(valueanswer == 1){
+                System.out.println("Please enter your opposite");
+                double opposite = scannervariable.nextDouble();
+                System.out.println("Please enter your hypotenuse");
+                double hypotenuse = scannervariable.nextDouble();
+                double total_0 = opposite / hypotenuse;
+                System.out.println("Your total is"+total_0+" degrees");
+            }else if(valueanswer == 2){
+                System.out.println("Please enter your ");
+            }else if(valueanswer == 3){
+
+            }
         }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
