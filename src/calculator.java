@@ -313,7 +313,6 @@ public class calculator {
                 double total_2 = opposite1 / adjacent1;
                 System.out.println("Your total is"+total_2+" degrees");
             }else if(valueanswer == 3){
-
             }
         }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
