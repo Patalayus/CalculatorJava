@@ -312,6 +312,8 @@ public class calculator {
                 double adjacent1 = scannervariable.nextDouble();
                 double total_2 = opposite1 / adjacent1;
                 System.out.println("Your total is"+total_2+" degrees");
+            }else if(valueanswer == 3){
+
             }
         }
         if (!userchoice.equals("1")&!userchoice.equals("2")&
@@ -323,7 +325,8 @@ public class calculator {
                 &!userchoice.equals("13")&!userchoice.equals("14")
                 &!userchoice.equals("15")&!userchoice.equals("16")
                 &!(userchoice.equals("17")&!(userchoice.equals("18")&!
-                (userchoice.equals("19")&!(userchoice.equals("20")))))){
+                (userchoice.equals("19")&!(userchoice.equals("20")
+                &!userchoice.equals("21")))))){
             System.out.println("Please enter a valid input");
         }
     }
