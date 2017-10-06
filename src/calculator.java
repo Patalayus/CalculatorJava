@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class calculator {
+
     public static void main(String args[]) throws InterruptedException {
         Scanner scannervariable = new Scanner(System.in);
         System.out.println("Please choose the calculation you want to do:");
@@ -331,8 +332,10 @@ public class calculator {
             System.out.println("Your total is "+enps_TOTF);
         }
         if(userchoice.equals("24")){
-            validation valobject = new validation();
-            System.out.printf(valobject.validate());
+            validation ValObject = new validation();
+            System.out.println(ValObject.val_2());
+            ValObject.validate(3,5,2);
+            System.out.println(ValObject.val_2());
         }
 
         }        if (!userchoice.equals("1")&!userchoice.equals("2")&
