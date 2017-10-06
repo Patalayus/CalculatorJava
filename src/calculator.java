@@ -11,7 +11,7 @@ public class calculator {
                 "\n14. Work out the kinetic energy of an object\n15. work out the period of an object" +
                 "\n16. Work out density\n17. work out the refractive index of an object" +
                 "\n18. SUVAT\n19. Calculate change in gravitational potential energy\n20. Work out the force on an object\n" +
-                "21. SOH CAH TOA");
+                "21. SOH CAH TOA\n22. Work out the weight of an object");
         String userchoice = scannervariable.nextLine();
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
@@ -312,11 +312,18 @@ public class calculator {
                 double adjacent1 = scannervariable.nextDouble();
                 double total_2 = opposite1 / adjacent1;
                 System.out.println("Your total is"+total_2+" degrees");
-            }else if(valueanswer == 3){
-
-            }
         }
-        if (!userchoice.equals("1")&!userchoice.equals("2")&
+        if(userchoice.equals("22")) {
+            System.out.println("You have chosen to work out the weight of an object");
+            System.out.println("Please enter your mass (kg)");
+            double enps_massweight = scannervariable.nextDouble();
+            System.out.println("Please enter your gravitational field strength (N)");
+            double enps_GFS = scannervariable.nextDouble();
+            double enps_totalweight = enps_massweight * enps_GFS;
+            System.out.println("Your total is " + enps_totalweight);
+        }
+
+        }        if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
                 !userchoice.equals("5")&!userchoice.equals("6")&
                 !userchoice.equals("7")&!userchoice.equals("8")&
