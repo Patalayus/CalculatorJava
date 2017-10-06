@@ -330,6 +330,10 @@ public class calculator {
             double enps_TOTF = enps_SPRINGC * enps_EXT;
             System.out.println("Your total is "+enps_TOTF);
         }
+        if(userchoice.equals("24")){
+            validation valobject = new validation();
+            System.out.printf(valobject.validate());
+        }
 
         }        if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
