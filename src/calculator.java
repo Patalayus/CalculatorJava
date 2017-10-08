@@ -74,9 +74,9 @@ public class calculator {
         }
         if(userchoice.equals("7")){
             //this subroutine will assist you in working out the momentum of any object given its mass and velocity.
-            System.out.println("Please enter your mass");
+            System.out.println("Please enter your mass (kg)");
             double enps_mass = scannervariable.nextDouble();
-            System.out.println("Please enter your velocity");
+            System.out.println("Please enter your velocity (m/s)");
             double enps_velocity = scannervariable.nextDouble();
             ValObject.Momentum(enps_mass, enps_velocity);
             System.out.printf(ValObject.MomentumOut());

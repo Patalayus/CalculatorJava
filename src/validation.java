@@ -35,6 +35,6 @@ public class validation {
          enps_momentumtotal = mass * velocity;
     }
     public String MomentumOut(){
-        return String.format("Your momentum is "+enps_momentumtotal);
+        return String.format("Your momentum is "+enps_momentumtotal+"kgm/s");
     }
 }
