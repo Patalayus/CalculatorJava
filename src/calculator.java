@@ -71,7 +71,6 @@ public class calculator {
             double enps_Cxquad =scannervariable.nextDouble();
             ValObject.Quadratic(enps_Axquad,enps_Bxquad,enps_Cxquad);
             System.out.println(ValObject.output());
-
         }
         if(userchoice.equals("7")){
             //this subroutine will assist you in working out the momentum of any object given its mass and velocity.
@@ -79,8 +78,8 @@ public class calculator {
             double enps_mass = scannervariable.nextDouble();
             System.out.println("Please enter your velocity");
             double enps_velocity = scannervariable.nextDouble();
-            double enps_momentum = enps_mass*enps_velocity;
-            System.out.println("Your total is "+enps_momentum);
+            ValObject.Momentum(enps_mass, enps_velocity);
+            System.out.printf(ValObject.MomentumOut());
         }
         if(userchoice.equals("8"))
         {

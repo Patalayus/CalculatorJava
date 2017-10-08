@@ -8,6 +8,7 @@ public class validation {
     double enps_total;
     double enps_top2;
     double enps_total2;
+    double enps_momentumtotal;
     public void validate(){
         calculator.variable2 +=1;
     }
@@ -28,5 +29,12 @@ public class validation {
     }
     public String output(){
         return String.format("Your positive is "+enps_total+ "Your negative is "+enps_total2);
+    }
+    public void Momentum(double mass, double velocity){
+        //p=m*v
+         enps_momentumtotal = mass * velocity;
+    }
+    public String MomentumOut(){
+        return String.format("Your momentum is "+enps_momentumtotal);
     }
 }
