@@ -5,6 +5,7 @@ public class calculator {
     static double variable2 = 0;
     public static void main(String args[]) throws InterruptedException {
         Scanner scannervariable = new Scanner(System.in);
+        validation ValObject = new validation();
         System.out.println("Please choose the calculation you want to do:");
         System.out.println("1. Add\n2. Minus\n3. Divide\n4. Multiply\n5. Mod\n6. Quadratic Formula" +
                 "\n7. Momentum of an object\n8. Speed, distance or time of an object\n9. Print prime numbers\n10. Young's Modulus" +
@@ -68,31 +69,9 @@ public class calculator {
             double enps_Bxquad = scannervariable.nextDouble();
             System.out.println("Please enter your C");
             double enps_Cxquad =scannervariable.nextDouble();
-            //-b+-/b^2-4(a*c)
-            //---------------
-            //     2a
-            double enps_AxC;
-            double enps_4xAC;
-            double enps_BxB;
-            double enps_BB_4xAC;
-            double enps_SqrtB_4xAC;
-            double enps_top;
-            double enps_total;
-            double enps_top2;
-            double enps_total2;
+            ValObject.Quadratic(enps_Axquad,enps_Bxquad,enps_Cxquad);
+            System.out.println(ValObject.output());
 
-            enps_AxC = enps_Axquad*enps_Cxquad;
-            enps_4xAC = 4*enps_AxC;
-            enps_BxB = enps_Bxquad*enps_Bxquad;
-            enps_BB_4xAC = enps_BxB - enps_4xAC;
-            enps_SqrtB_4xAC = Math.sqrt(enps_BB_4xAC);
-            enps_top = -enps_Bxquad+enps_SqrtB_4xAC;
-            enps_top2 = -enps_Bxquad-enps_SqrtB_4xAC;
-            enps_total = enps_top/2*enps_Axquad;
-            enps_total2 = enps_top2/2*enps_Axquad;
-
-            System.out.println("Your positive x is "+enps_total);
-            System.out.println("Your negative x is "+enps_total2);
         }
         if(userchoice.equals("7")){
             //this subroutine will assist you in working out the momentum of any object given its mass and velocity.
@@ -333,7 +312,6 @@ public class calculator {
             System.out.println("Your total is "+enps_TOTF);
         }
         if(userchoice.equals("24")){
-            validation ValObject = new validation();
             ValObject.validate();
             System.out.println("Variable 2 equals "+variable2);
         }
@@ -348,7 +326,9 @@ public class calculator {
                 &!userchoice.equals("15")&!userchoice.equals("16")
                 &!(userchoice.equals("17")&!(userchoice.equals("18")&!
                 (userchoice.equals("19")&!(userchoice.equals("20")
-                &!userchoice.equals("21")))))){
+                &!userchoice.equals("21")&!(userchoice.equals("22")
+                        &!(userchoice.equals("23")&!(userchoice.equals("24")))))))))
+        {
             System.out.println("Please enter a valid input");
         }
     }
