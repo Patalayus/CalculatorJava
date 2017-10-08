@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class calculator {
-
+    static double variable2 = 0;
     public static void main(String args[]) throws InterruptedException {
         Scanner scannervariable = new Scanner(System.in);
         System.out.println("Please choose the calculation you want to do:");
@@ -288,31 +288,32 @@ public class calculator {
             double enps_total_ = enps_mass_ * enps_accceleration_;
             System.out.println("Your total is "+enps_total_+"N");
         }
-        if(userchoice.equals("21")){
+        if(userchoice.equals("21")) {
             System.out.println("You have chosen to work out sine theta, tan theta or cos theta");
             System.out.println("Please enter which option you would want to work out:\n1. Sin\n2. Cos\n3. Tan");
             double valueanswer = scannervariable.nextDouble();
-            if(valueanswer == 1){
+            if (valueanswer == 1) {
                 System.out.println("Please enter your opposite");
                 double opposite = scannervariable.nextDouble();
                 System.out.println("Please enter your hypotenuse");
                 double hypotenuse = scannervariable.nextDouble();
                 double total_0 = opposite / hypotenuse;
-                System.out.println("Your total is"+total_0+" degrees");
-            }else if(valueanswer == 2){
+                System.out.println("Your total is" + total_0 + " degrees");
+            } else if (valueanswer == 2) {
                 System.out.println("Please enter your adjacent angle");
                 double adjacent = scannervariable.nextDouble();
                 System.out.println("Please enter your hypotenuse");
                 double hypotenuse1 = scannervariable.nextDouble();
                 double total_1 = adjacent / hypotenuse1;
-                System.out.println("Your total is "+total_1+" degrees");
-            }else if(valueanswer == 3){
+                System.out.println("Your total is " + total_1 + " degrees");
+            } else if (valueanswer == 3) {
                 System.out.println("Please enter your opposite");
                 double opposite1 = scannervariable.nextDouble();
                 System.out.println("Please enter your adjacent");
                 double adjacent1 = scannervariable.nextDouble();
                 double total_2 = opposite1 / adjacent1;
-                System.out.println("Your total is"+total_2+" degrees");
+                System.out.println("Your total is" + total_2 + " degrees");
+            }
         }
         if(userchoice.equals("22")) {
             System.out.println("You have chosen to work out the weight of an object");
@@ -333,12 +334,11 @@ public class calculator {
         }
         if(userchoice.equals("24")){
             validation ValObject = new validation();
-            System.out.println(ValObject.val_2());
-            ValObject.validate(3,5,2);
-            System.out.println(ValObject.val_2());
+            ValObject.validate();
+            System.out.println("Variable 2 equals "+variable2);
         }
 
-        }        if (!userchoice.equals("1")&!userchoice.equals("2")&
+                if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
                 !userchoice.equals("5")&!userchoice.equals("6")&
                 !userchoice.equals("7")&!userchoice.equals("8")&
