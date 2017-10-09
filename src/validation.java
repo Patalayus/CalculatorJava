@@ -1,6 +1,9 @@
 import com.sun.org.apache.bcel.internal.generic.ALOAD;
 
+import java.util.Scanner;
+
 public class validation {
+    calculator CalObj = new calculator();
     double enps_AxC;
     double enps_4xAC;
     double enps_BxB;
@@ -57,5 +60,11 @@ public class validation {
     }
     public String ModOut(){
         return String.format("Your Young's Modulus is "+modfin);
+    }
+    public void AlphaSCT(){
+        CalObj.SOHCAHTOA_();
+    }
+    public void back(){
+        CalObj.SOHCAHTOA_();
     }
 }

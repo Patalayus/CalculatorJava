@@ -1,3 +1,5 @@
+import com.sun.beans.decoder.ValueObject;
+
 import java.util.Scanner;
 
 public class calculator {
@@ -266,31 +268,7 @@ public class calculator {
             System.out.println("Your total is "+enps_total_+"N");
         }
         if(userchoice.equals("21")) {
-            System.out.println("You have chosen to work out sine theta, tan theta or cos theta");
-            System.out.println("Please enter which option you would want to work out:\n1. Sin\n2. Cos\n3. Tan");
-            double valueanswer = scannervariable.nextDouble();
-            if (valueanswer == 1) {
-                System.out.println("Please enter your opposite");
-                double opposite = scannervariable.nextDouble();
-                System.out.println("Please enter your hypotenuse");
-                double hypotenuse = scannervariable.nextDouble();
-                double total_0 = opposite / hypotenuse;
-                System.out.println("Your total is" + total_0 + " degrees");
-            } else if (valueanswer == 2) {
-                System.out.println("Please enter your adjacent angle");
-                double adjacent = scannervariable.nextDouble();
-                System.out.println("Please enter your hypotenuse");
-                double hypotenuse1 = scannervariable.nextDouble();
-                double total_1 = adjacent / hypotenuse1;
-                System.out.println("Your total is " + total_1 + " degrees");
-            } else if (valueanswer == 3) {
-                System.out.println("Please enter your opposite");
-                double opposite1 = scannervariable.nextDouble();
-                System.out.println("Please enter your adjacent");
-                double adjacent1 = scannervariable.nextDouble();
-                double total_2 = opposite1 / adjacent1;
-                System.out.println("Your total is" + total_2 + " degrees");
-            }
+            ValObject.AlphaSCT();
         }
         if(userchoice.equals("22")) {
             System.out.println("You have chosen to work out the weight of an object");
@@ -328,4 +306,37 @@ public class calculator {
             System.out.println("Please enter a valid input");
         }
     }
+    public void SOHCAHTOA_(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("You have chosen to work out sine theta, tan theta or cos theta");
+        System.out.println("Please enter which option you would want to work out:\n1. Sin\n2. Cos\n3. Tan");
+        double valueanswer = input.nextDouble();
+        if(valueanswer == 1){
+            System.out.println("Please enter your opposite");
+            double opposite = input.nextDouble();
+            System.out.println("Please enter your hypotenuse");
+            double hypotenuse = input.nextDouble();
+            double total_0 = opposite / hypotenuse;
+            System.out.println("Your total is "+total_0+" degrees");
+        }else if(valueanswer == 2){
+            System.out.println("Please enter your adjacent angle");
+            double adjacent = input.nextDouble();
+            System.out.println("Please enter your hypotenuse");
+            double hypotenuse1 = input.nextDouble();
+            double total_1 = adjacent / hypotenuse1;
+            System.out.println("Your total is "+total_1+" degrees");
+        }else if(valueanswer == 3){
+            System.out.println("Please enter your opposite");
+            double opposite1 = input.nextDouble();
+            System.out.println("Please enter your adjacent");
+            double adjacent1 = input.nextDouble();
+            double total_2 = opposite1 / adjacent1;
+            System.out.println("Your total is "+total_2+" degrees");
+        }else{
+            validation qwertyuiop = new validation();
+            qwertyuiop.back();
+        }
+    }
 }
+
+
