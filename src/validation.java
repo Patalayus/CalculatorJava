@@ -1,3 +1,5 @@
+import com.sun.org.apache.bcel.internal.generic.ALOAD;
+
 public class validation {
     double enps_AxC;
     double enps_4xAC;
@@ -11,6 +13,7 @@ public class validation {
     double enps_momentumtotal;
     double all;
     double suball;
+    double modfin;
     public void validate(){
         calculator.variable2 +=1;
     }
@@ -48,5 +51,11 @@ public class validation {
     }
     public String subfin(){
         return String.format(""+suball);
+    }
+    public void Modulus(double F, double A, double DL, double L){
+        modfin = (F/A)/(DL/L);
+    }
+    public String ModOut(){
+        return String.format("Your Young's Modulus is "+modfin);
     }
 }

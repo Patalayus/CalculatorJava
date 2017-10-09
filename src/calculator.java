@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 public class calculator {
     static double variable2 = 0;
@@ -136,8 +135,8 @@ public class calculator {
             double enps_changeinlengthforyoungs = scannervariable.nextDouble();
             System.out.println("Please enter your original length");
             double enps_originallength = scannervariable.nextDouble();
-            double youngs = (enps_forceforyoungs/enps_areaforyoungs)/(enps_changeinlengthforyoungs/enps_originallength);
-            System.out.println("Your Young's Modulus is "+youngs);
+            ValObject.Modulus(enps_forceforyoungs, enps_areaforyoungs, enps_changeinlengthforyoungs, enps_originallength);
+            System.out.printf(ValObject.ModOut());
         }
         if(userchoice.equals("11")){
             System.out.println("Please enter your current in amps");
