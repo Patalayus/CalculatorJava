@@ -9,6 +9,8 @@ public class validation {
     double enps_top2;
     double enps_total2;
     double enps_momentumtotal;
+    double all;
+    double suball;
     public void validate(){
         calculator.variable2 +=1;
     }
@@ -23,7 +25,6 @@ public class validation {
         enps_SqrtB_4xAC = Math.sqrt(enps_BB_4xAC);
         enps_top = -B+enps_SqrtB_4xAC;
         enps_top2 = -B-enps_SqrtB_4xAC;
-
         enps_total = enps_top/2*A;
         enps_total2 = enps_top2/2*A;
     }
@@ -31,10 +32,21 @@ public class validation {
         return String.format("Your positive is "+enps_total+ "Your negative is "+enps_total2);
     }
     public void Momentum(double mass, double velocity){
-        //p=m*v
          enps_momentumtotal = mass * velocity;
     }
     public String MomentumOut(){
         return String.format("Your momentum is "+enps_momentumtotal+"kgm/s");
+    }
+    public void Add(double first, double second){
+        all = first + second;
+    }
+    public String outadd(){
+        return String.format(""+all);
+    }
+    public void subtract(double first2, double second2){
+        suball = first2 - second2;
+    }
+    public String subfin(){
+        return String.format(""+suball);
     }
 }

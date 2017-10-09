@@ -18,37 +18,37 @@ public class calculator {
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
             System.out.println("Enter your first number");
-            double first = scannervariable.nextDouble();
+                double first = scannervariable.nextDouble();
             System.out.println("Enter your second number");
-            double second = scannervariable.nextDouble();
-            double total = first + second;
-            System.out.println("Your total is " + total);
+                double second = scannervariable.nextDouble();
+            ValObject.Add(first, second);
+            System.out.printf(ValObject.outadd());
         }
         if (userchoice.equals("2")){
             //this section of code works to allow for the user to minus two numbers together
             System.out.println("Enter your first number");
-            double enps_first = scannervariable.nextDouble();
+                double enps_first = scannervariable.nextDouble();
             System.out.println("Enter your second number");
-            double enps_second = scannervariable.nextDouble();
-            double enps_total = enps_first - enps_second;
-            System.out.println("Your total is "+enps_total);
+                double enps_second = scannervariable.nextDouble();
+            ValObject.subtract(enps_first, enps_second);
+            System.out.printf(ValObject.subfin());
         }
         if (userchoice.equals("3")){
             //this section of code works to allow for the user to be able to divide two number together
             System.out.println("Enter your first number");
-            double enps_first2 = scannervariable.nextDouble();
+                double enps_first2 = scannervariable.nextDouble();
             System.out.println("Enter your second number");
-            double enps_second2 = scannervariable.nextDouble();
-            double enps_total2 = enps_first2 / enps_second2;
+                double enps_second2 = scannervariable.nextDouble();
+                double enps_total2 = enps_first2 / enps_second2;
             System.out.println("Your total is "+enps_total2);
         }
         if (userchoice.equals("4")){
             //this section of code works to allow for the user to be able to multiply two numbers together
             System.out.println("Enter your first number");
-            double enps_first3 = scannervariable.nextDouble();
+                double enps_first3 = scannervariable.nextDouble();
             System.out.println("Enter your second number");
-            double enps_second3 = scannervariable.nextDouble();
-            double enps_total3 = enps_first3 * enps_second3;
+                double enps_second3 = scannervariable.nextDouble();
+                double enps_total3 = enps_first3 * enps_second3;
             System.out.println("Your total is "+enps_total3);
         }
         if(userchoice.equals("5"))
@@ -325,9 +325,7 @@ public class calculator {
                 &!userchoice.equals("15")&!userchoice.equals("16")
                 &!(userchoice.equals("17")&!(userchoice.equals("18")&!
                 (userchoice.equals("19")&!(userchoice.equals("20")
-                &!userchoice.equals("21")&!(userchoice.equals("22")
-                        &!(userchoice.equals("23")&!(userchoice.equals("24")))))))))
-        {
+                &!userchoice.equals("21")&!(userchoice.equals("22") &!(userchoice.equals("23")&!(userchoice.equals("24"))))))))) {
             System.out.println("Please enter a valid input");
         }
     }
