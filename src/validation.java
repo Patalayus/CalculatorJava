@@ -3,6 +3,8 @@ import com.sun.org.apache.bcel.internal.generic.ALOAD;
 import java.util.Scanner;
 
 public class validation {
+    //validation nextone = new validation();
+
     calculator CalObj = new calculator();
     double enps_AxC;
     double enps_4xAC;
@@ -17,6 +19,11 @@ public class validation {
     double all;
     double suball;
     double modfin;
+    double divtot;
+    public double appendthis;
+    Scanner thisscan = new Scanner(System.in);
+
+
     public void validate(){
         calculator.variable2 +=1;
     }
@@ -66,5 +73,14 @@ public class validation {
     }
     public void back(){
         CalObj.SOHCAHTOA_();
+    }
+    public String SDT(){
+        return String.format("Please specify which equation you want to use:\n1. S=D/T\n2. T=D/S\n3. D=SxT");
+    }
+    public void div(double div1, double div2){
+        divtot = div1 / div2;
+    }
+    public String outdiv(){
+        return String.format(""+divtot);
     }
 }

@@ -37,11 +37,11 @@ public class calculator {
         if (userchoice.equals("3")){
             //this section of code works to allow for the user to be able to divide two number together
             System.out.println("Enter your first number");
-                double enps_first2 = scannervariable.nextDouble();
+            double enps_first2 = scannervariable.nextDouble();
             System.out.println("Enter your second number");
-                double enps_second2 = scannervariable.nextDouble();
-                double enps_total2 = enps_first2 / enps_second2;
-            System.out.println("Your total is "+enps_total2);
+            double enps_second2 = scannervariable.nextDouble();
+            ValObject.div(enps_first2, enps_second2);
+            System.out.printf(ValObject.outdiv());
         }
         if (userchoice.equals("4")){
             //this section of code works to allow for the user to be able to multiply two numbers together
@@ -84,8 +84,9 @@ public class calculator {
         }
         if(userchoice.equals("8"))
         {
-            System.out.println("Please specify which equation you want to use:\n1.S=D/T\n2.T=D/S\n3.D=SxT");
+            System.out.println("Please specify which equation you want to use:\n1. S=D/T\n2. T=D/S\n3. D=SxT");
             double responce = scannervariable.nextDouble();
+            ValObject.SDT();
             if(responce == 1){
                 //S=D/T
                 System.out.println("Please enter your distance");
@@ -93,7 +94,7 @@ public class calculator {
                 System.out.println("Please enter you time");
                 double time0 = scannervariable.nextDouble();
                 double total0 = distance0 / time0;
-                System.out.println("Your total is"+total0);
+                System.out.println("Y our total is"+total0);
             }else if(responce ==2){
                 //T=D/S
                 System.out.println("Please enter your distance");
@@ -118,7 +119,7 @@ public class calculator {
             //this subroutine prints prime numbers from 1 to 1000
             System.out.println("Printing prime numbers...");
             int count = 2;
-            for(int i=2;i<1000;i++){
+            for(int i=0;i<1000;i++){
                 count++;
                 if(count%2!=0&&count%3!=0&&count%4!=0&&count%5!=0
                         &&count%6!=0&&count%7!=0&&count%8!=0&&count%9!=0){
@@ -333,8 +334,8 @@ public class calculator {
             double total_2 = opposite1 / adjacent1;
             System.out.println("Your total is "+total_2+" degrees");
         }else{
-            validation qwertyuiop = new validation();
-            qwertyuiop.back();
+            validation skiploop = new validation();
+            skiploop.CalObj.SOHCAHTOA_();
         }
     }
 }
