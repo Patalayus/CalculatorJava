@@ -83,7 +83,9 @@ public class validation {
     public String outdiv(){
         return String.format(""+divtot);
     }
-    public void modnum(){
-
+    public void modnum(double first, double second){
+        Scanner thisscan = new Scanner(System.in);
+        double totalmodnum = first % second;
+        System.out.println("Your total is "+totalmodnum);
     }
 }

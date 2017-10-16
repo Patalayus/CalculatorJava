@@ -59,8 +59,7 @@ public class calculator {
             double enps_answer1 = scannervariable.nextDouble();
             System.out.println("Enter your second number");
             double enps_answer2 = scannervariable.nextDouble();
-            double enps_total22 = enps_answer1 % enps_answer2;
-            System.out.println("Your total is "+enps_total22);
+            ValObject.modnum(enps_answer1, enps_answer2);
         }
         if(userchoice.equals("6")){
             //this section of code will work to give you a negative and positive x using the quadratic formula
