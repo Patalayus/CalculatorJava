@@ -83,4 +83,7 @@ public class validation {
     public String outdiv(){
         return String.format(""+divtot);
     }
+    public void modnum(){
+
+    }
 }
