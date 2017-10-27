@@ -165,8 +165,7 @@ public class calculator {
             double enps_Xmass = scannervariable.nextDouble();
             System.out.println("Please enter your speed in m/s");
             double enps_Xspeed = scannervariable.nextDouble();
-            double enps_kineticenergy = (0.5*enps_Xmass)*(enps_Xspeed*enps_Xspeed);
-            System.out.println("Your total kinetic energy is "+enps_kineticenergy+"J");
+            ValObject.kinetic(enps_Xmass, enps_Xspeed);
         }
         if(userchoice.equals("15")){
             System.out.println("Please enter your frequency");

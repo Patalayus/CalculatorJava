@@ -86,4 +86,8 @@ public class validation {
         double totalmodnum = first % second;
         System.out.println("Your total is "+totalmodnum);
     }
+    public void kinetic(double mass, double speed){
+        double enps_kineticenergy = (0.5*mass)*(speed*speed);
+        System.out.println("Your total kinetic energy is "+enps_kineticenergy+"J");
+    }
 }
