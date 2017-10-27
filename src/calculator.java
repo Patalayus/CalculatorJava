@@ -168,19 +168,10 @@ public class calculator {
             ValObject.kinetic(enps_Xmass, enps_Xspeed);
         }
         if(userchoice.equals("15")){
-            System.out.println("Please enter your frequency");
-            double enps_frequency = scannervariable.nextDouble();
-            //T=1/f
-            double enps_total1212 = 1/enps_frequency;
-            System.out.println(enps_total1212);
+            ValObject.freq();
         }
         if(userchoice.equals("16")){
-            System.out.println("Please enter your mass");
-            double enps_mass11 = scannervariable.nextDouble();
-            System.out.println("Please enter volume");
-            double enps_volume11 = scannervariable.nextDouble();
-            double enps_density = enps_mass11 / enps_volume11;
-            System.out.println("Your total is "+enps_density);
+            ValObject.density();
         }
         if(userchoice.equals("17")){
             System.out.println("Please enter your angle of incidence");
