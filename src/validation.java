@@ -107,4 +107,13 @@ public class validation {
         double enps_density = enps_mass11 / enps_volume11;
         System.out.println("Your total is "+enps_density);
     }
+    public void FMA(){
+        Scanner scannervariable = new Scanner(System.in);
+        System.out.println("You have chosen to work out the force on an object.\nPlease enter your mass. (kg)");
+        double enps_mass_ = scannervariable.nextDouble();
+        System.out.println("Please enter your acceleration (m/s^2)");
+        double enps_accceleration_ = scannervariable.nextDouble();
+        double enps_total_ = enps_mass_ * enps_accceleration_;
+        System.out.println("Your total is "+enps_total_+"N");
+    }
 }

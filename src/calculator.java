@@ -248,12 +248,7 @@ public class calculator {
 
         if(userchoice.equals("20")){
             //F=m*a
-            System.out.println("You have chosen to work out the force on an object.\nPlease enter your mass. (kg)");
-            double enps_mass_ = scannervariable.nextDouble();
-            System.out.println("Please enter your acceleration (m/s^2)");
-            double enps_accceleration_ = scannervariable.nextDouble();
-            double enps_total_ = enps_mass_ * enps_accceleration_;
-            System.out.println("Your total is "+enps_total_+"N");
+            ValObject.FMA();
         }
         if(userchoice.equals("21")) {
             ValObject.AlphaSCT();
