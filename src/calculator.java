@@ -44,10 +44,10 @@ public class calculator {
         if (userchoice.equals("4")){
             //this section of code works to allow for the user to be able to multiply two numbers together
             System.out.println("Enter your first number");
-                double enps_first3 = scannervariable.nextDouble();
+            double enps_first3 = scannervariable.nextDouble();
             System.out.println("Enter your second number");
-                double enps_second3 = scannervariable.nextDouble();
-                double enps_total3 = enps_first3 * enps_second3;
+            double enps_second3 = scannervariable.nextDouble();
+            double enps_total3 = enps_first3 * enps_second3;
             System.out.println("Your total is "+enps_total3);
         }
         if(userchoice.equals("5"))
@@ -254,13 +254,7 @@ public class calculator {
             ValObject.AlphaSCT();
         }
         if(userchoice.equals("22")) {
-            System.out.println("You have chosen to work out the weight of an object");
-            System.out.println("Please enter your mass (kg)");
-            double enps_massweight = scannervariable.nextDouble();
-            System.out.println("Please enter your gravitational field strength (N)");
-            double enps_GFS = scannervariable.nextDouble();
-            double enps_totalweight = enps_massweight * enps_GFS;
-            System.out.println("Your total is " + enps_totalweight);
+            ValObject.GFS();
         }
         if(userchoice.equals("23")){
             System.out.println("You have chosen to work out force applied onto an object\nPlease enter your spring constant");

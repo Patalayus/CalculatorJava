@@ -116,4 +116,14 @@ public class validation {
         double enps_total_ = enps_mass_ * enps_accceleration_;
         System.out.println("Your total is "+enps_total_+"N");
     }
+    public void GFS(){
+        Scanner scannervariable = new Scanner(System.in);
+        System.out.println("You have chosen to work out the weight of an object");
+        System.out.println("Please enter your mass (kg)");
+        double enps_massweight = scannervariable.nextDouble();
+        System.out.println("Please enter your gravitational field strength (N)");
+        double enps_GFS = scannervariable.nextDouble();
+        double enps_totalweight = enps_massweight * enps_GFS;
+        System.out.println("Your total is " + enps_totalweight);
+    }
 }
