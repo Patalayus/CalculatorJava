@@ -126,4 +126,16 @@ public class validation {
         double enps_totalweight = enps_massweight * enps_GFS;
         System.out.println("Your total is " + enps_totalweight);
     }
+    public void EPMGH(){
+        Scanner scannervariable = new Scanner(System.in);
+        System.out.println("You have chosen to work out the change in gravitational energy of an object.");
+        System.out.println("Please enter your mass");
+        double mass = scannervariable.nextDouble();
+        System.out.println("Please enter your gravitational field strength");
+        double field_strength = scannervariable.nextDouble();
+        System.out.println("Please enter you height");
+        double height = scannervariable.nextDouble();
+        double total_all = mass*field_strength*height;
+        System.out.println("Your total is "+total_all);
+    }
 }
