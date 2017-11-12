@@ -138,4 +138,16 @@ public class validation {
         double total_all = mass*field_strength*height;
         System.out.println("Your total is "+total_all);
     }
+    public void Voltage(){
+        System.out.println("Please enter your current in amps");
+        double enps_currentvariable = thisscan.nextDouble();
+        System.out.println("Please enter your resistance in ohms");
+        double enps_resistancevariable = thisscan.nextDouble();
+        double enps_voltage = enps_currentvariable * enps_resistancevariable;
+        System.out.println("You voltage is "+enps_voltage+"v");
+    }
+    public void sin(double A, double B){
+        double enps_totalRef = Math.sin(A)/Math.sin(B);
+        System.out.println("Your total is "+enps_totalRef);
+    }
 }

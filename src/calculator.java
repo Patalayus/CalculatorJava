@@ -141,12 +141,7 @@ public class calculator {
             System.out.printf(ValObject.ModOut());
         }
         if(userchoice.equals("11")){
-            System.out.println("Please enter your current in amps");
-            double enps_currentvariable = scannervariable.nextDouble();
-            System.out.println("Please enter your resistance in ohms");
-            double enps_resistancevariable = scannervariable.nextDouble();
-            double enps_voltage = enps_currentvariable * enps_resistancevariable;
-            System.out.println("You voltage is "+enps_voltage+"v");
+            ValObject.Voltage();
         }
         if(userchoice.equals("12")){
             for(int content=0;content<100;content++){
@@ -180,8 +175,7 @@ public class calculator {
             double enps_AOI = scannervariable.nextDouble();
             System.out.println("Please enter your angle of refraction");
             double enps_AOR = scannervariable.nextDouble();
-            double enps_totalRef = Math.sin(enps_AOI)/Math.sin(enps_AOR);
-            System.out.println("Your total is"+enps_totalRef);
+            ValObject.sin(enps_AOI, enps_AOR);
         }
         if(userchoice.equals("18")){
             System.out.println("You have chosen to do a SUVAT equation\nPlease choose one:\n1. v=u+at\n2. s=ut+0.5*at^2\n3." +
