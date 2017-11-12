@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class calculator {
     static double variable2 = 0;
@@ -14,6 +15,7 @@ public class calculator {
                 "\n18. SUVAT\n19. Calculate change in gravitational potential energy\n20. Work out the force on an object\n" +
                 "21. SOH CAH TOA\n22. Work out the weight of an object\n23. Work out force on an object");
         String userchoice = scannervariable.nextLine();
+
         if (userchoice.equals("1")) {
             //this section of code works to allow for the user to add two numbers together
             System.out.println("Enter your first number");
@@ -237,7 +239,6 @@ public class calculator {
             //Ep=m*g*h
             ValObject.EPMGH();
         }
-
         if(userchoice.equals("20")){
             //F=m*a
             ValObject.FMA();
