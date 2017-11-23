@@ -13,7 +13,7 @@ public class calculator {
                 "\n14. Work out the kinetic energy of an object\n15. work out the period of an object" +
                 "\n16. Work out density\n17. work out the refractive index of an object" +
                 "\n18. SUVAT\n19. Calculate change in gravitational potential energy\n20. Work out the force on an object\n" +
-                "21. SOH CAH TOA\n22. Work out the weight of an object\n23. Work out force on an object");
+                "21. SOH CAH TOA\n22. Work out the weight of an object\n23. Work out force on an object\n24. test");
         String userchoice = scannervariable.nextLine();
 
         if (userchoice.equals("1")) {
@@ -255,7 +255,9 @@ public class calculator {
             ValObject.validate();
             System.out.println("Variable 2 equals "+variable2);
         }
-
+        if(userchoice.equals("25")){
+            ValObject.print();
+        }
                 if (!userchoice.equals("1")&!userchoice.equals("2")&
                 !userchoice.equals("3")&!userchoice.equals("4")&
                 !userchoice.equals("5")&!userchoice.equals("6")&

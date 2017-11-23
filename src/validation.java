@@ -150,4 +150,16 @@ public class validation {
         double enps_totalRef = Math.sin(A)/Math.sin(B);
         System.out.println("Your total is "+enps_totalRef);
     }
+    public void print(){
+        System.out.println("This test is working\n1. Please enter a number between 1 and 100");
+        double number = 0;
+        if(number >= 100){
+            System.out.println("that's more than 100");
+        }else if(number <= 0){
+            System.out.println("Please enter a number which is more than 0");
+        }else{
+            System.out.println("You have entered a correct number");
+        }
+    }
 }
+
